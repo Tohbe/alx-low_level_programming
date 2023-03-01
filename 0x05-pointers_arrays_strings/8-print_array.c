@@ -2,24 +2,24 @@
 #include <stdio.h>
 
 /**
- * print_array - Prints n elements of an array of integers
- * @a: Array of integers
- * @n: Numbers of elements of the array to be printed
- * Return: void
+ *print_array - prints a string in reverse
+ **@a: pointer to char
+ *@n: number of elements of the array to be printed
  */
 
 void print_array(int *a, int n)
-
 {
+	int i = 0;
 
-	int j;
-
-	for (j = 0; j < n; j++)
+	for (i = 0; i < n; i++)
 	{
-		printf("%d", a[j]);
-		if (j != (n - 1))
+		if (i != n - 1)
 		{
-			printf(", ");
+		printf("%d, ", a[i]);
+		}
+		else
+		{
+			printf("%d", a[i]);
 		}
 	}
 	printf("\n");
